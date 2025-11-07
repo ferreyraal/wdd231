@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Home | Alejandro Ferreyra— Profile Web Certificate</title>
+    <meta name="description"
+        content="Home page for my Web Certificate — courses, about me, student photo, and links. Responsive and accessible." />
+    <meta name="author" content="Alejandro Fabian Ferreyra" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/courses.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <img src="images/student.svg" alt="Site logo" class="logo" width="60" height="60">
+                <span class="site-name">Alejandro Ferreyra</span>
+            </div>
+
+            <button id="navToggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html" class="current">Home</a></li>
+                <li><a href="chamber.html">Chamber Project</a></li>
+                <li><a href="final.html">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container grid">
+        <h1>Home</h1>
+
+        <section class="about-section section-card">
+            <h2>About Me</h2>
+            <div class="section-content">
+                <p>Hello! My name is Alejandro Ferreyra, and I’m a student passionate about
+                    technology, logistics, and web development. I enjoy learning new tools,
+                    solving problems, and working on creative projects that make a difference.</p>
+
+                <p>I run a logistics company called EYRA SRL, where we help businesses simplify their operations — from warehousing and
+                    order preparation to transportation and deliveries.</p>
+
+                <p>Over the past few years, I’ve worked with several clients to improve their delivery times and organize their
+                    inventory
+                    more efficiently by implementing systems that give them better control and visibility.</p>
+
+                <p>I’m an organized, reliable, and hands-on person, and I enjoy working closely with clients to understand their needs
+                    and
+                    offer solutions that make their day-to-day operations easier.</p>
+
+            </div>
+        </section>
+
+        <section class="student-photo section-card">
+            <h2>Student Photo</h2>
+            <div class="section-content">
+                <img src="images/student.jpeg" alt="Student photo">
+            </div>
+        </section>
+
+        <section class="certificates-section section-card">
+            <h2>Web Certificate Courses</h2>
+
+            <div class="filters" role="group" aria-label="Filter courses">
+                <button class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+                <button class="filter-btn" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button class="filter-btn" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+
+            <div id="course-list" class="course-list" aria-live="polite">
+            </div>
+
+            <p id="credit-summary" class="credit-summary">Total credits for displayed courses: <span
+                    id="credits">0</span></p>
+        </section>
+
+        <section class="links">
+            <p class="social">
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <img src="images/github.svg" alt="GitHub icon">
+                </a>
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <img src="images/linkedin.svg" alt="LinkedIn icon">
+                </a>
+            </p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p id="copyright">
+                &copy; <span id="copyrightYear"></span> Alejandro Ferreyra • Buenos Aires - Argentina
+            </p>
+            <p id="lastModified">Last Modification: <span id="lastModifiedValue"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

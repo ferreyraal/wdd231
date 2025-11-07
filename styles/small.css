@@ -1,0 +1,248 @@
+
+:root {
+    --primary: #004aad;
+    --primary-light: #0074f0;
+    --text: #111;
+    --background: #f8f9fc;
+    --card-bg: #ffffff;
+    --muted: #555;
+    --gap: 1rem;
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: .5rem .75rem;
+    background: var(--primary);
+    color: #fff;
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+.site-header {
+    background: var(--primary);
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.site-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: block;
+    border-radius: 6px;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    padding: .5rem;
+}
+
+.hamburger {
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+.primary-nav {
+    background: var(--primary);
+}
+
+.primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.primary-nav a {
+    display: block;
+    padding: .75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.primary-nav a.current,
+.primary-nav a:hover {
+    background: var(--primary-light);
+}
+
+.container {
+    padding: 1rem;
+}
+
+.grid {
+    display: block;
+    gap: var(--gap);
+}
+
+.card {
+    background: var(--card-bg);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .1);
+}
+
+.about-text {
+    margin-bottom: 1rem;
+}
+
+.student-photo img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+.filters {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    margin: 1rem 0;
+}
+
+.filter-btn {
+    padding: .5rem .7rem;
+    border-radius: 8px;
+    border: 2px solid var(--primary);
+    background: #fff;
+    cursor: pointer;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.filter-btn[aria-pressed="true"] {
+    background: var(--primary);
+    color: #fff;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .75rem;
+}
+
+.course-card {
+    padding: .8rem;
+    border-radius: 6px;
+    background: var(--card-bg);
+    border-left: 6px solid var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-card.completed {
+    border-left-color: #2a9d8f;
+    background: linear-gradient(180deg, #f0fff6, #fff);
+}
+
+.credit-summary {
+    text-align: center;
+    margin-top: .75rem;
+    color: var(--muted);
+}
+
+.site-footer {
+    padding: 1rem;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.section-card {
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .1);
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.section-card h2 {
+    background: var(--primary);
+    color: #fff;
+    margin: 0;
+    padding: 0.75rem 1rem;
+    font-size: 1.2rem;
+}
+
+.section-content {
+    padding: 1rem;
+}
+
+main>h1 {
+    text-align: center;
+    color: var(--primary);
+    margin: 1rem 0 0.5rem;
+    font-size: 1.8rem;
+}

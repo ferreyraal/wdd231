@@ -1,0 +1,118 @@
+@media (min-width: 768px) {
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-areas:
+            "title title"
+            "about photo"
+            "certificates certificates";
+        grid-template-columns: 2fr 1fr;
+        grid-gap: 1rem;
+        align-items: stretch;
+    }
+
+    main>h1 {
+        grid-area: title;
+        text-align: left;
+        color: #000000;
+        margin: 0;
+        padding: 0.8rem 1rem;
+        border-radius: 0px;
+        font-size: 1.8rem;
+    }
+
+    .about-section {
+        grid-area: about;
+        margin-top: 1rem;
+    }
+
+    .student-photo {
+        grid-area: photo;
+        margin-top: 1rem;
+    }
+
+    .certificates-section {
+        grid-area: certificates;
+    }
+
+    .section-card {
+        background: var(--card-bg);
+        border-radius: 8px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, .1);
+        overflow: hidden;
+    }
+
+    .section-card h2 {
+        background: var(--primary);
+        color: #fff;
+        margin: 0;
+        padding: 0.75rem 1rem;
+        font-size: 1.2rem;
+    }
+
+    .section-content {
+        padding: 1.25rem;
+    }
+
+    .student-photo img {
+        width: 100%;
+        height: auto;
+        border-radius: 6px;
+        display: block;
+    }
+
+    .certificates-section .course-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+        gap: 1rem;
+    }
+
+    .header-inner {
+        padding: 1rem 2rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.75rem 0;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a.current {
+        background: var(--primary-light);
+    }
+
+    .site-footer {
+        font-size: 1rem;
+        background: var(--primary);
+        color: #fff;
+    }
+
+    .social {
+        display: flex;
+        gap: 0.75rem;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social img {
+        width: 35px;
+        height: 35px;
+        filter: grayscale(100%);
+        transition: filter 0.3s ease;
+    }
+
+    .social img:hover {
+        filter: grayscale(0%) brightness(1.1);
+    }
+}
