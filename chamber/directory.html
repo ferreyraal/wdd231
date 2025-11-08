@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Directory | Chamber of commerce Florencio Varela</title>
+    <meta name="description"
+        content="Directory page for Chamber of commerce Florencio Varela. Responsive and accessible." />
+    <meta name="author" content="Alejandro Fabian Ferreyra" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Directory | Chamber of commerce Florencio Varela">
+    <meta property="og:description"
+        content="Directory page for Chamber of commerce Florencio Varela. Responsive and accessible.">
+    <meta property="og:url" content="https://ferreyraal.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://ferreyraal.github.io/wdd231/chamber/images/logofv">
+
+
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/directory.js"></script>
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <img src="images/logofv.png" alt="Site logo" class="logo" width="60" height="60">
+                <span class="site-name">Florencio Varela Chamber of Commerce</span>
+            </div>
+
+            <button id="navToggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" class="current" >Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Directory</h1>
+        <p class="subtitle">Connecting with business</p>
+    
+        <div class="view-buttons">
+            <button id="grid-view" class="active" title="Vista de cuadrícula">🔲</button>
+            <button id="list-view" title="Vista de lista">📃</button>
+        </div>
+        <section id="members-container" class="grid-view"></section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p id="copyright">
+                &copy; <span id="copyrightYear"></span> Florencio Varela Chamber of Commerce • Buenos Aires - Argentina
+            </p>
+            <p id="lastModified">Last Modification: <span id="lastModifiedValue"></span></p>
+        </div>
+    </footer>
+</body>
+
+</html>

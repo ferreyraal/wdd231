@@ -1,0 +1,67 @@
+{
+    "members": [
+        {
+            "name": "San Cayetano Bakery",
+            "address": "2456 San Martín Ave, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4237 1180",
+            "website": "https://pansancayetano.com.ar",
+            "image": "sancayetano.webp",
+            "membershipLevel": 1,
+            "description": "Traditional artisan bakery and pastry shop in downtown Varela, famous for its freshly baked croissants since 1985."
+        },
+        {
+            "name": "Happy Hardware Store",
+            "address": "3120 Eva Perón Ave, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4255 3344",
+            "website": "https://eltornillofeliz.com.ar",
+            "image": "hardwarestore.webp",
+            "membershipLevel": 2,
+            "description": "Neighborhood hardware store offering a wide variety of tools, paints, electrical and plumbing supplies. Home delivery available for professionals."
+        },
+        {
+            "name": "Don Pedro Supermarket",
+            "address": "985 Sallares Street, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4237 4421",
+            "website": "https://superdonpedro.com.ar",
+            "image": "supermarket.webp",
+            "membershipLevel": 1,
+            "description": "Family-owned supermarket with over 30 years of history in the neighborhood. Offers fresh produce, groceries, and cleaning products."
+        },
+        {
+            "name": "Varela Fitness Gym",
+            "address": "230 Monteagudo Street, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4210 9988",
+            "website": "https://varelafitness.com",
+            "image": "gym.webp",
+            "membershipLevel": 3,
+            "description": "Modern gym offering functional training, weightlifting, crossfit, and pilates classes. Open Monday through Saturday."
+        },
+        {
+            "name": "Il Viale Ice Cream Shop",
+            "address": "5120 Calchaquí Ave, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4275 0044",
+            "website": "https://heladeriailviale.com",
+            "image": "icecream.webp",
+            "membershipLevel": 2,
+            "description": "Artisan ice creams made with traditional Italian recipes. Home delivery available in Varela and surrounding areas. Known for its 'Dulce de Leche Granizado' flavor."
+        },
+        {
+            "name": "Huellas Veterinary Clinic",
+            "address": "150 Las Heras Street, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4237 7741",
+            "website": "https://veterinariahuellas.com.ar",
+            "image": "clinicvet.webp",
+            "membershipLevel": 1,
+            "description": "Veterinary care, pet shop, and boarding service. Personalized attention and trusted professionals for your pets."
+        },
+        {
+            "name": "Varela South Motors",
+            "address": "10550 Hipólito Yrigoyen Ave, Florencio Varela, Buenos Aires",
+            "phone": "+54 11 4275 6633",
+            "website": "https://varelasurautos.com",
+            "image": "carsales.webp",
+            "membershipLevel": 3,
+            "description": "Official multi-brand dealership. Sales of new and used cars, financing options, and same-day vehicle registration."
+        }
+    ]
+}

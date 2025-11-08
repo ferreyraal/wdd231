@@ -1,0 +1,64 @@
+@media (min-width: 768px) {
+
+    main>h1 {
+        grid-area: title;
+        text-align: left;
+        color: #000000;
+        margin: 0;
+        padding: 0.8rem 1rem;
+        border-radius: 0px;
+        font-size: 1.8rem;
+    }
+
+    .header-inner {
+        padding: 1rem 2rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.75rem 0;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a.current {
+        background: var(--primary-light);
+    }
+
+    .site-footer {
+        font-size: 1rem;
+        background: var(--primary);
+        color: #fff;
+    }
+
+ #members-container.grid-view {
+     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+ }
+
+ .grid-view .member-card {
+     text-align: left;
+ }
+
+ .grid-view .member-card img {
+     width: 100%;
+     display: block;
+     margin: 0 auto 1rem auto;
+ }
+
+ .list-view .member-card {
+     grid-template-columns: 2fr 2fr 1fr 2fr;
+     padding: 1rem 2rem;
+     font-size: 1rem;
+ }
+
+ .view-buttons button {
+     font-size: 1.5rem;
+ }
+
+
+}

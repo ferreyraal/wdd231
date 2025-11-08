@@ -1,0 +1,237 @@
+
+:root {
+    --primary: #004aad;
+    --primary-light: #0074f0;
+    --text: #111;
+    --background: #f8f9fc;
+    --card-bg: #ffffff;
+    --muted: #555;
+    --gap: 1rem;
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: .5rem .75rem;
+    background: var(--primary);
+    color: #fff;
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+.site-header {
+    background: var(--primary);
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.site-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: block;
+    border-radius: 6px;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    padding: .5rem;
+}
+
+.hamburger {
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+.primary-nav {
+    background: var(--primary);
+}
+
+.primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.primary-nav a {
+    display: block;
+    padding: .75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.primary-nav a.current,
+.primary-nav a:hover {
+    background: var(--primary-light);
+}
+
+
+
+.credit-summary {
+    text-align: center;
+    margin-top: .75rem;
+    color: var(--muted);
+}
+
+.site-footer {
+    padding: 1rem;
+    background: var(--primary);
+    color: #fff;
+    text-align: center;
+    font-size: .9rem;
+}
+
+.site-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+h1,
+.subtitle {
+    text-align: center;
+}
+
+.view-buttons {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.view-buttons button {
+    background: none;
+    border: 2px solid #006699;
+    color: #006699;
+    padding: 0.4rem 0.6rem;
+    margin: 0 0.3rem;
+    font-size: 1.2rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.view-buttons button.active {
+    background-color: #006699;
+    color: #fff;
+}
+
+#members-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.grid-view .member-card {
+    background: #f0f8ff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.grid-view .member-card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+}
+
+.list-view {
+    display: block;
+}
+
+.list-view .member-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    padding: 0.6rem;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9ffff;
+}
+
+.list-view .member-card:nth-child(even) {
+    background-color: #e8f6f6;
+}
+
+.list-view .member-card img {
+    display: none;
+}
+
+.member-card a {
+    color: #006699;
+    text-decoration: none;
+}
+
+.member-card a:hover {
+    text-decoration: underline;
+}
