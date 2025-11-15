@@ -30,35 +30,88 @@
         background: var(--primary-light);
     }
 
-    .site-footer {
-        font-size: 1rem;
-        background: var(--primary);
-        color: #fff;
+    #members-container.grid-view {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
 
- #members-container.grid-view {
-     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- }
+    .grid-view .member-card {
+        text-align: left;
+    }
 
- .grid-view .member-card {
-     text-align: left;
- }
+    .grid-view .member-card img {
+        width: 100%;
+        display: block;
+        margin: 0 auto 1rem auto;
+    }
 
- .grid-view .member-card img {
-     width: 100%;
-     display: block;
-     margin: 0 auto 1rem auto;
- }
+    .list-view .member-card {
+        grid-template-columns: 2fr 2fr 1fr 2fr;
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
 
- .list-view .member-card {
-     grid-template-columns: 2fr 2fr 1fr 2fr;
-     padding: 1rem 2rem;
-     font-size: 1rem;
- }
+    .view-buttons button {
+        font-size: 1.5rem;
+    }
 
- .view-buttons button {
-     font-size: 1.5rem;
- }
+    .hero {
+        height: 350px;
+        margin-bottom: 2rem;
+    }
 
+    .hero-cta {
+        padding: .8rem 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 2rem;
+        gap: 1.5rem;
+    }
+
+    .box {
+        padding: 1.5rem;
+    }
+
+    .box h2 {
+        font-size: 1.4rem;
+    }
+
+   .spotlights {
+       grid-template-columns: repeat(3, 1fr);
+       gap: 1.5rem;
+       margin: 2rem auto;
+       max-width: 1100px;
+   }
+
+   .spotlight-card {
+       padding: 1rem;
+   }
+
+   .spotlight-card img {
+       width: 100px;
+       height: 100px;
+   }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-center {
+        justify-content: center;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
 
 }

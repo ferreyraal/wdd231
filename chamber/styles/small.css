@@ -132,25 +132,12 @@ body {
 }
 
 
-
 .credit-summary {
     text-align: center;
     margin-top: .75rem;
     color: var(--muted);
 }
 
-.site-footer {
-    padding: 1rem;
-    background: var(--primary);
-    color: #fff;
-    text-align: center;
-    font-size: .9rem;
-}
-
-.site-footer a {
-    color: #fff;
-    text-decoration: underline;
-}
 
 body {
     font-family: "Inter", sans-serif;
@@ -234,4 +221,166 @@ h1,
 
 .member-card a:hover {
     text-decoration: underline;
+}
+
+/* HOME PAGE */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    border: none;
+    color: white;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta:hover {
+    background: var(--primary-light);
+}
+
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.events ul {
+    padding-left: 1.2rem;
+}
+
+.forecast p,
+.weather p {
+    margin: .3rem 0;
+}
+
+.spotlights {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.spotlight-card {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    max-width: none;
+}
+
+.spotlight-card img {
+    width: 90px;
+    height: 90px;
+    border-radius: 6px;
+    object-fit: cover;
+    margin-bottom: .6rem;
+}
+
+.spotlight-card h3 {
+    font-size: 1.1rem;
+    margin-bottom: .3rem;
+}
+
+.level-tag {
+    display: inline-block;
+    font-size: .85rem;
+    padding: .25rem .7rem;
+    border-radius: 12px;
+    margin-bottom: .6rem;
+}
+
+.spotlight-card.gold {
+    background: #fff7d1;
+    border: 2px solid #e5c100;
+}
+
+.spotlight-card.silver {
+    background: #f2f2f2;
+    border: 2px solid #b8b8b8;
+}
+
+.weather-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#weather-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.site-footer {
+    background: var(--primary);
+    color: #fff;
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer-left h4 {
+    margin: 0 0 .5rem 0;
+    font-size: 1.1rem;
+}
+
+.footer-left p,
+.footer-right p {
+    margin: 0.2rem 0;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%);
+}
+
+.footer-right {
+    text-align: right;
+    font-size: .9rem;
 }
