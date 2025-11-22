@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Directory | Chamber of commerce Florencio Varela</title>
+    <meta name="description"
+        content="Directory page for Chamber of commerce Florencio Varela. Responsive and accessible." />
+    <meta name="author" content="Alejandro Fabian Ferreyra" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/join.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Directory | Chamber of commerce Florencio Varela">
+    <meta property="og:description"
+        content="Directory page for Chamber of commerce Florencio Varela. Responsive and accessible.">
+    <meta property="og:url" content="https://ferreyraal.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://ferreyraal.github.io/wdd231/chamber/images/logofv">
+
+
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script defer src="scripts/join.js"></script>
+
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <img src="images/logofv.png" alt="Site logo" class="logo" width="60" height="60">
+                <span class="site-name">Florencio Varela Chamber of Commerce</span>
+            </div>
+
+            <button id="navToggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html" >Directory</a></li>
+                <li><a href="join.html" class="current" >Join</a></li>
+                <li><a href="discover.html">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Join</h1>
+        <form method="GET" action="thanks.html" class="designJoin">
+
+            <label>First Name
+                <input type="text" name="first" required autocomplete="given-name" title="Your First Name">
+            </label>
+
+            <label>Last Name
+                <input type="text" name="last" required autocomplete="family-name" title="Your Last Name">
+            </label>
+
+            <label>Organizational Title
+                <input type="text" name="org_title" required autocomplete="organization-title" title="Your organizational title"
+                    pattern="[A-Za-zÀ-ÖØ-öø-ÿ\s-]{7,}">
+            </label>
+
+            <label>Email
+                <input type="email" name="email" required placeholder="john89@gmail.com" autocomplete="email"
+                    title="Your Email">
+            </label>
+
+            <label>Cell Phone
+                <input type="tel" name="phone" required autocomplete="tel" placeholder="987-555-1234"
+                    title="A phone number with dashes">
+            </label>
+
+            <label>Organization
+                <input type="text" name="organization" required autocomplete="organization"
+                    title="Business / Organization Name">
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
+            <h3>Membership Level</h3>
+
+            <div class="radio-group">
+                <label><input type="radio" name="membership" value="np" required> Non profit organizations</label>
+                <label><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label><input type="radio" name="membership" value="gold"> Gold Membership</label>
+            </div>
+
+            <label for="description">Business/Organization's description
+                <textarea id="description" name="description" placeholder="Business/Organization's description"></textarea>
+            </label>
+
+            <input type="submit" value="Submit membership">
+
+        </form>
+        <section class="membership-cards">
+            <div class="membership-card" data-modal="modal-np">
+                <h3>NP Membership</h3>
+                <p>No fee — Ideal for non-profit organizations</p>
+                <a>More info</a>
+            </div>
+        
+            <div class="membership-card" data-modal="modal-bronze">
+                <h3>Bronze Membership</h3>
+                <p>Basic benefits and visibility</p>
+                <a>More info</a>
+            </div>
+        
+            <div class="membership-card" data-modal="modal-silver">
+                <h3>Silver Membership</h3>
+                <p>Expanded marketing and event access</p>
+                <a>More info</a>
+            </div>
+        
+            <div class="membership-card" data-modal="modal-gold">
+                <h3>Gold Membership</h3>
+                <p>Maximum benefits and premium exposure</p>
+                <a>More info</a>
+            </div>
+        </section>
+        
+        <div id="modal-np" class="modal-overlay">
+            <div class="modal">
+                <h2>NP Membership Benefits</h2>
+                <p>• Free membership<br>• Access to community events<br>• Networking opportunities</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="modal-bronze" class="modal-overlay">
+            <div class="modal">
+                <h2>Bronze Membership Benefits</h2>
+                <p>• Business directory listing<br>• Event discounts<br>• Basic advertising</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="modal-silver" class="modal-overlay">
+            <div class="modal">
+                <h2>Silver Membership Benefits</h2>
+                <p>• Spotlight advertising<br>• Premium directory listing<br>• Training programs</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+        
+        <div id="modal-gold" class="modal-overlay">
+            <div class="modal">
+                <h2>Gold Membership Benefits</h2>
+                <p>• Maximum advertisement<br>• Full VIP event access<br>• Featured homepage placement</p>
+                <button class="close-modal">Close</button>
+            </div>
+        </div>
+
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <div class="footer-left">
+                <h4>Florencio Varela Chamber of Commerce</h4>
+                <p>Av. San Martín 1234</p>
+                <p>Florencio Varela, Buenos Aires</p>
+                <p>Email: info@fvchamber.org</p>
+                <p>Tel: (+54) 11-4300-1234</p>
+            </div>
+
+            <div class="footer-center">
+                <a href="facebook.com" aria-label="Facebook"><img src="images/icon-facebook.svg" alt=""></a>
+                <a href="twitter.com" aria-label="Twitter"><img src="images/icon-twitter.svg" alt=""></a>
+                <a href="linkedin.com" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt=""></a>
+            </div>
+
+            <div class="footer-right">
+                <p>WDD231 Final Project</p>
+                <p>By Alejandro Ferreyra</p>
+                <p>&copy; <span id="copyrightYear"></span> Florencio Varela Chamber of Commerce</p>
+                <p>Last Update: <span id="lastModifiedValue"></span></p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
