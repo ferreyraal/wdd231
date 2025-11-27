@@ -1,0 +1,49 @@
+
+
+
+:root {
+    --primary-light: #A7D8FF;
+    --primary: #0072C6;
+    --primary-dark: #003366;
+    --text-color: #333;
+    --background: #FFFFFF;
+}
+
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    background-color: var(--background);
+    color: var(--text-color);
+    padding: 2rem;
+    line-height: 1.6;
+}
+
+
+
+h1
+{
+    font-family: 'Georgia', serif;
+    color: var(--primary-dark);
+}
+
+h2,
+h3 {
+    font-family: 'Georgia', serif;
+    color: var(--primary-light);
+}
+
+.color-sample {
+    width: 120px;
+    height: 30px;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+
+
+.wireframes img {
+    max-width: 300px;
+    display: block;
+    margin: 1rem 0;
+}
