@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
 
     main>h1 {
         grid-area: title;
@@ -114,4 +114,12 @@
         text-align: right;
     }
 
+
+                main .discover-grid {
+                    grid-template-columns: repeat(4, 1fr);
+                    gap: 1.5rem;
+                    padding: 2rem;
+                }
 }
+
+

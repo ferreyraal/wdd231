@@ -1,0 +1,27 @@
+@media (min-width: 641px) {
+    main .discover-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+        padding: 2rem;
+        align-items: start;
+    }
+
+    main .discover-grid .discover-card {
+        grid-column: auto;
+        width: 100%;
+        max-width: none;
+    }
+
+    main .discover-grid .discover-card img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+        display: block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    main .discover-grid .discover-card img:hover {
+        transform: scale(1.05);
+    }
+}
