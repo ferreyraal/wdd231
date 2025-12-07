@@ -1,0 +1,527 @@
+
+:root {
+    --primary: #004aad;
+    --primary-light: #0074f0;
+    --text: #111;
+    --background: #f8f9fc;
+    --card-bg: #ffffff;
+    --muted: #555;
+    --gap: 1rem;
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.5;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-link:focus {
+    left: 1rem;
+    top: 1rem;
+    width: auto;
+    height: auto;
+    padding: .5rem .75rem;
+    background: var(--primary);
+    color: #fff;
+    z-index: 1000;
+    border-radius: 6px;
+}
+
+.site-header {
+    background: var(--primary);
+    color: #fff;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .75rem;
+}
+
+.logo-wrap {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.site-name {
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.logo {
+    display: block;
+    border-radius: 6px;
+}
+
+.nav-toggle {
+    background: transparent;
+    border: 0;
+    color: inherit;
+    padding: .5rem;
+}
+
+.hamburger {
+    display: inline-block;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+    position: relative;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: #fff;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    top: 8px;
+}
+
+.primary-nav {
+    background: var(--primary);
+}
+
+.primary-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+
+.primary-nav a {
+    display: block;
+    padding: .75rem 1rem;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.primary-nav a.current,
+.primary-nav a:hover {
+    background: var(--primary-light);
+}
+
+
+.credit-summary {
+    text-align: center;
+    margin-top: .75rem;
+    color: var(--muted);
+}
+
+h1,
+.subtitle {
+    text-align: center;
+}
+
+/* ==== HERO  ==== */
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-cta {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: var(--primary);
+    border: none;
+    color: white;
+    padding: .6rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.hero-cta:hover {
+    background: var(--primary-light);
+}
+
+
+/* ==== HOME GRID AND BOX  ==== */
+
+.home-grid {
+    display: grid;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.box {
+    background: var(--card-bg);
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box h2 {
+    margin-top: 0;
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+.events ul {
+    padding-left: 1.2rem;
+}
+
+.forecast p,
+.weather p {
+    margin: .3rem 0;
+}
+
+.weather-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#weather-icon {
+    width: 60px;
+    height: 60px;
+}
+
+/* ==== FOOTER  ==== */
+.site-footer {
+    background: var(--primary);
+    color: var(--card-bg);
+    padding: 1.5rem 1rem;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+}
+
+.footer-left,
+.footer-right {
+    text-align: center;
+}
+
+.footer-center {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) invert(1);
+}
+
+.site-footer p,
+.site-footer h4 {
+    line-height: 0.4;
+}
+
+.video-link {
+    color: white;
+}
+
+/* ==== REGION CARDS  ==== */
+
+#region-container,
+#regions-container {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.region-card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    background: rgb(215, 220, 224);
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.region-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 0.5rem;
+}
+
+.more-btn {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #0066cc;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* === MODAL === */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 20;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    backdrop-filter: blur(2px);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background: rgb(215, 220, 224);
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 12px;
+    position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+#close-modal {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* === PRODUCTS === */
+
+.filters {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+#products-list {
+    max-width: 900px;
+    margin: auto;
+}
+
+.product-row {
+    display: grid;
+    grid-template-columns: 40% 25% 20% 15%;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+}
+
+.product-row p {
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-row button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    white-space: nowrap;
+    justify-self: end;
+}
+
+/* === PRODUCT MODAL === */
+.product-modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.product-modal-content {
+    background: rgb(215, 220, 224);
+    width: 90%;
+    max-width: 450px;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    text-align: center;
+}
+
+#product-modal-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.product-modal-content img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* === SPOTLINGHTS PRODUCGTOS HOME PAGE === */
+
+
+.product-spotlights {
+    width: 100%;
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.product-card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.02);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0 5px;
+    color: var(--primary);
+}
+
+.product-card p {
+    margin: 5px 0;
+}
+
+h2 {
+    text-align: center;
+    color: var(--primary);
+}
+
+/* === REVIEW FORM === */
+
+form {
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    padding: .7rem;
+    margin-top: .3rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button {
+    padding: .8rem;
+    background: #004aad;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #00357e;
+}
+
+.hidden {
+    display: none;
+}
+
+#result {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    border-left: 5px solid #004aad;
+    background: #eef4ff;
+    border-radius: 5px;
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-flex;
+    gap: 5px;
+}
+
+.star-rating input {
+    display: none;
+}
+
+.star-rating label {
+    font-size: 2rem;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+    color: gold;
+}
+
+.star-rating input:checked~label {
+    color: gold;
+}

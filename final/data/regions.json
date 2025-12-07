@@ -1,0 +1,124 @@
+{
+    "regions": [
+            {
+                "name": "Buenos Aires City",
+                "provinces": [
+                    "Ciudad Autónoma de Buenos Aires"
+                ],
+                "main_city": "Buenos Aires",
+                "top_vacation_spot": "Puerto Madero / San Telmo / Recoleta",
+                "products": [
+                    "Artisanal leather goods",
+                    "Alfajores (Havanna-style)",
+                    "Café porteño (specialty coffee)"
+                ],
+                "average_temperature": "Mild temperate; warm summers and cool winters",
+                "population_estimate": 3100000,
+                "distance_from_buenos_aires_km": 0,
+                "image": "images/regions/buenosaires.webp"
+            },
+            {
+            "name": "Northwest (NOA)",
+            "provinces": [
+                "Salta",
+                "Tucuman",
+                "Jujuy",
+                "Catamarca",
+                "La Rioja",
+                "Santiago del Estero"
+            ],
+            "main_city": "San Miguel de Tucumán",
+            "top_vacation_spot": "Quebrada de Humahuaca / Cafayate",
+            "products": [
+                "Salta-style empanadas",
+                "Andean textiles (ponchos, woven blankets)",
+                "Cayote jam and regional sweets"
+            ],
+            "average_temperature": "Varies by altitude; generally warm summers and cool-to-cold winters",
+            "population_estimate": 5840000,
+            "distance_from_buenos_aires_km": 1280,
+            "image": "images/regions/northwest.webp"
+        },
+        {
+            "name": "Northeast (NEA)",
+            "provinces": [
+                "Misiones",
+                "Corrientes",
+                "Chaco",
+                "Formosa"
+            ],
+            "main_city": "Iguazu Falls",
+            "top_vacation_spot": "Iguazú Falls",
+            "products": [
+                "Yerba mate",
+                "Wood and fiber handicrafts",
+                "Chipa"
+            ],
+            "average_temperature": "Humid subtropical; warm with seasonal rains",
+            "population_estimate": 4230000,
+            "distance_from_buenos_aires_km": 1070,
+            "image": "images/regions/northeast.webp"
+        },
+        {
+            "name": "Cuyo",
+            "provinces": [
+                "Mendoza",
+                "San Juan",
+                "San Luis"
+            ],
+            "main_city": "Mendoza",
+            "top_vacation_spot": "Uco Valley (vineyards and wine tourism)",
+            "products": [
+                "Malbec wine and other varietals",
+                "Olive oil and olives",
+                "Fruit preserves"
+            ],
+            "average_temperature": "Arid/semi-arid; hot days and cool nights",
+            "population_estimate": 2800000,
+            "distance_from_buenos_aires_km": 1040,
+            "image": "images/regions/cuyo.webp"
+        },
+        {
+            "name": "Pampas / Central Region",
+            "provinces": [
+                "Buenos Aires (interior)",
+                "Córdoba",
+                "Santa Fe",
+                "Entre Ríos",
+                "La Pampa"
+            ],
+            "main_city": "Córdoba",
+            "top_vacation_spot": "Sierras de Córdoba",
+            "products": [
+                "Dulce de leche",
+                "Cheeses and dairy products",
+                "Cold cuts and beef products"
+            ],
+            "average_temperature": "Temperate and humid; warm summers and mild winters",
+            "population_estimate": 35000000,
+            "distance_from_buenos_aires_km": 700,
+            "image": "images/regions/pampa.webp"
+        },
+        {
+            "name": "Patagonia",
+            "provinces": [
+                "Neuquén",
+                "Río Negro",
+                "Chubut",
+                "Santa Cruz",
+                "Tierra del Fuego"
+            ],
+            "main_city": "San Carlos de Bariloche",
+            "top_vacation_spot": "Lakes region (Bariloche)",
+            "products": [
+                "Sheep wool and artisan garments",
+                "Wild berries and jams",
+                "Artisanal chocolate"
+            ],
+            "average_temperature": "Cool climate; avg. 8–10°C",
+            "population_estimate": 2910000,
+            "distance_from_buenos_aires_km": 1630,
+            "image": "images/regions/patagonia.webp"
+        }
+    ]
+}

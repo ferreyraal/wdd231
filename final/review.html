@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Review | Knowing Argentina Final project</title>
+    <meta name="description"
+        content="Review form for Final project WDD 231 - Responsive web site" />
+    <meta name="author" content="Alejandro Fabian Ferreyra" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/medium.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Review | Knowing Argentina Final project">
+    <meta property="og:description"
+        content="Review Form for Knowing Argentina Final project">
+    <meta property="og:url" content="https://ferreyraal.github.io/wdd231/final/review.html">
+    <meta property="og:image" content="https://ferreyraal.github.io/wdd231/final/images/arglogo.png">
+
+
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/date.js"></script>
+    <script type="module" src="scripts/review.js"></script>
+
+</head>
+
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo-wrap">
+                <img src="images/arglogo.png" alt="Site logo" class="logo" width="60" height="60">
+                <span class="site-name">Discover Argentina</span>
+            </div>
+
+            <button id="navToggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false"
+                aria-label="Open navigation">
+                <span class="hamburger" aria-hidden="true"></span>
+            </button>
+        </div>
+
+        <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="regions.html" >Regions</a></li>
+                <li><a href="products.html" >Products</a></li>
+                <li><a href="review.html" class="current" >Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <h1>Review</h1>
+        <form action="review-result.html" method="get" class="review-form">
+        
+            <label for="first">First Name*</label>
+            <input type="text" id="first" name="first" required>
+        
+            <label for="last">Last Name*</label>
+            <input type="text" id="last" name="last" required>
+        
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="type">What are you reviewing?*</label>
+            <select id="type" name="type" required>
+                <option value="">Select an option</option>
+                <option value="region">A Region</option>
+                <option value="product">A Product</option>
+            </select>
+        
+            <label for="item">Region or Product Name*</label>
+            <input type="text" id="item" name="rev_item" placeholder="Ej: Mendoza, Dulce de Leche, Salta" autocomplete="new-password" required>
+        
+            <label for="review">Your Review*</label>
+            <textarea id="review" name="review" rows="5" required placeholder="Write your experience here..."></textarea>
+            <label for="rating">¿Rank? *</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+            
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+            
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+            
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+            
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+            <button type="submit">Share your Review</button>
+        </form>
+       
+    </main>
+
+<footer class="site-footer">
+    <div class="footer-content">
+
+        <div class="footer-left">
+            <h4>Discover Argentina Contact</h4>
+            <p>Buenos Aires, Argentina</p>
+            <p>Email: info@discoverargentina.org</p>
+            <p>Tel: (+54) 11-5555-1234</p>
+        </div>
+
+        <div class="footer-center">
+            <a href="facebook.com" aria-label="Facebook"><img src="images/icon-facebook.svg" alt="Facebook icon"></a>
+            <a href="twitter.com" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter icon"></a>
+            <a href="linkedin.com" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt="Linkedin icon"></a>
+        </div>
+
+        <div class="footer-right">
+            <p>WDD231 Final Project</p>
+            <p>By Alejandro Ferreyra</p>
+            <a class="video-link" href="https://youtu.be/-xiLGJ9up1A" target="_blank" rel="noopener">
+                Video Demonstration
+            </a>
+            <p>&copy; <span id="copyrightYear"></span> Discover Argentina</p>
+            <p>Last Update: <span id="lastModifiedValue"></span></p>
+        </div>
+
+    </div>
+</footer>
+</body>
+
+</html>

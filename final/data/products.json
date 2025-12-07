@@ -1,0 +1,139 @@
+{
+    "products": [
+        {
+            "name": "Salta-style empanadas",
+            "region": "Northwest (NOA)",
+            "image": "images/products/empanadas.webp",
+            "price_usd": 6,
+            "type": "Food",
+            "description": "Traditional empanadas from Salta, filled with beef, onion, potatoes, egg, and spices.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=L_Jh5Z-v2Ew"
+        },
+        {
+            "name": "Andean textiles",
+            "region": "Northwest (NOA)",
+            "image": "images/products/textil.webp",
+            "price_usd": 40,
+            "type": "Handicraft",
+            "description": "Handwoven ponchos and blankets made with traditional Andean techniques.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=vgCw9ZP7R2A"
+        },
+        {
+            "name": "Cayote jam",
+            "region": "Northwest (NOA)",
+            "image": "images/products/cayote.webp",
+            "price_usd": 8,
+            "type": "Food",
+            "description": "Sweet jam made from cayote, a regional fruit commonly served with cheese.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=_nRZMOyCnaM"
+        },
+        {
+            "name": "Yerba mate",
+            "region": "Northeast (NEA)",
+            "image": "images/products/yerba.webp",
+            "price_usd": 12,
+            "type": "Beverage",
+            "description": "Dried and ground yerba leaves used to prepare traditional Argentine mate.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=T3v5p9QiH98"
+        },
+        {
+            "name": "Wooden and fiber handicrafts",
+            "region": "Northeast (NEA)",
+            "image": "images/products/handicrafts.webp",
+            "price_usd": 20,
+            "type": "Handicraft",
+            "description": "Handcrafted baskets, wood carvings, and indigenous Guaraní artisan products.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=z8ePd68Xo8U"
+        },
+        {
+            "name": "Chipa",
+            "region": "Northeast (NEA)",
+            "image": "images/products/chipa.webp",
+            "price_usd": 5,
+            "type": "Food",
+            "description": "Cheesy baked bread made with cassava flour, a Guaraní traditional recipe.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=Y3qGQ1BM-N8"
+        },
+        {
+            "name": "Malbec wine",
+            "region": "Cuyo",
+            "image": "images/products/malbec.webp",
+            "price_usd": 15,
+            "type": "Beverage",
+            "description": "Argentina’s iconic red wine, known for its deep flavor and Mendoza origin.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=sjFoyeU9P5E"
+        },
+        {
+            "name": "Olive oil",
+            "region": "Cuyo",
+            "image": "images/products/olive.webp",
+            "price_usd": 10,
+            "type": "Food",
+            "description": "High-quality olive oil produced mainly in Mendoza and San Juan.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=OvmH-tJ5JvU"
+        },
+        {
+            "name": "Fruit preserves",
+            "region": "Cuyo",
+            "image": "images/products/fuitpreserves.webp",
+            "price_usd": 6,
+            "type": "Food",
+            "description": "Sweet preserves made from regional fruits like quince, figs, or peach.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=akXxw9VfBa0"
+        },
+        {
+            "name": "Dulce de leche",
+            "region": "Pampas / Central Region",
+            "image": "images/products/dulceleche.webp",
+            "price_usd": 4,
+            "type": "Food",
+            "description": "Argentina's classic caramel spread made from milk and sugar.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=jt2sRPrvKx0"
+        },
+        {
+            "name": "Cheeses (Pategrás, Reggianito)",
+            "region": "Pampas / Central Region",
+            "image": "images/products/pategras.webp",
+            "price_usd": 9,
+            "type": "Food",
+            "description": "Traditional cheeses produced in the Pampas, influenced by European immigrants.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=yi5CwYk8p4U"
+        },
+        {
+            "name": "Cold cuts and sausages",
+            "region": "Pampas / Central Region",
+            "image": "images/products/salame.webp",
+            "price_usd": 12,
+            "type": "Food",
+            "description": "Charcuterie products such as salami, longaniza, and bondiola, especially from Córdoba.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=WyrpA0qGL3Y"
+        },
+        {
+            "name": "Sheep wool garments",
+            "region": "Patagonia",
+            "image": "images/products/sheepsweater.webp",
+            "price_usd": 35,
+            "type": "Handicraft",
+            "description": "Handmade wool clothing such as sweaters and scarves, crafted from Patagonian sheep wool.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=jM0eGp0O7Pw"
+        },
+        {
+            "name": "Wild berry jams",
+            "region": "Patagonia",
+            "image": "images/products/wildjams.webp",
+            "price_usd": 7,
+            "type": "Food",
+            "description": "Jams made from regional berries like calafate, raspberry, and maqui.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=BnwzHSwfW1Q"
+        },
+        {
+            "name": "Artisanal chocolate",
+            "region": "Patagonia",
+            "image": "images/products/chocolate.webp",
+            "price_usd": 10,
+            "type": "Food",
+            "description": "Handcrafted chocolate, famous in Bariloche’s mountain region.",
+            "how_to_make_link": "https://www.youtube.com/watch?v=pz4CyMfCVxg"
+        }
+    ]
+}

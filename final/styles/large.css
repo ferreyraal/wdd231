@@ -1,0 +1,82 @@
+@media (min-width: 1025px) {
+
+    main>h1 {
+        grid-area: title;
+        text-align: left;
+        color: #000000;
+        margin: 0;
+        padding: 0.8rem 1rem;
+        border-radius: 0px;
+        font-size: 1.8rem;
+    }
+
+    .header-inner {
+        padding: 1rem 2rem;
+    }
+
+    .nav-toggle {
+        display: none;
+    }
+
+    .primary-nav ul {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0.75rem 0;
+    }
+
+    .primary-nav a:hover,
+    .primary-nav a.current {
+        background: var(--primary-light);
+    }
+
+    .hero {
+        height: 350px;
+        margin-bottom: 1rem;
+    }
+
+    .hero-cta {
+        padding: .8rem 1.4rem;
+        font-size: 1.1rem;
+    }
+
+    .home-grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        padding: 0 2rem;
+        gap: 1.5rem;
+    }
+
+    .box {
+        padding: 1.5rem;
+    }
+
+    .box h2 {
+        font-size: 1.4rem;
+    }
+
+    .footer-content {
+        display: grid;
+        grid-template-columns: 1fr auto 1fr;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    .footer-left {
+        text-align: left;
+    }
+
+    .footer-center {
+        justify-content: center;
+    }
+
+    .footer-right {
+        text-align: right;
+    }
+
+    /* ==== REGION CARDS  ==== */
+    #regions-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
